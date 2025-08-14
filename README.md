@@ -5,13 +5,6 @@ This project contains two case studies:
 Construction Company Website – built using React (Vite) + Tailwind CSS.
 Simple Authentication System – built using Node.js + Express.js.
 
-The repository is structured as:
-task/
-│
-├── backend/      # Node.js + Express.js authentication system
-├── frontend/     # React (Vite) + Tailwind CSS construction website
-└── README.md
-
 
 🛠 Tech Stack
 
@@ -27,87 +20,101 @@ Nodemailer (for simulated confirmation email)
 bcrypt (for password hashing)
 JSON Web Token (JWT)
 
-📂 Project Structure
-task/
-│
-├── backend/
-│   ├── src/                # Server source code
-│   ├── .env                # Environment variables (not committed to git)
-│   ├── package.json
-│   └── .gitignore
-│
-├── frontend/
-│   ├── public/             # Public assets
-│   ├── src/                # React components
-│   ├── index.html
-│   ├── package.json
-│   └── .gitignore
-
 ⚙️ Setup Instructions
+
 1️⃣ Clone the repository
+
 git clone https://github.com/aravindsamuel/task.git
+
 cd task
 
 2️⃣ Backend Setup
+
 cd backend
+
 npm install
 
+
+
 Create a .env file inside /backend and give the credentials respectively
+
 PORT=5000
+
 DB_HOST=localhost
+
 DB_PORT=5432
+
 DB_NAME=   
+
 DB_USER=
+
 DB_PASS=
+
 JWT_SECRET=
+
 JWT_EXPIRES_IN=7d
+
 SMTP_HOST=smtp.sendgrid.net
+
 SMTP_PORT=587
+
 SMTP_USER=apikey           
+
 SMTP_PASS=
+
 EMAIL_FROM=
+
 APP_URL=http://localhost:5173
+
 API_URL=http://localhost:5000
 
 
+
+
+
 Run backend
+
 npm start
+
 Backend will run on http://localhost:5000
 
 
 3️⃣ Frontend Setup
+
 cd ../frontend
+
 npm install
 
 Run frontend
+
 npm run dev
+
 Frontend will run on http://localhost:5173 (default Vite port)
 
 
 🚀 Features
 
 Case Study 1: Construction Company Website
+
 Responsive design for desktop & mobile
+
 Company introduction
+
 Services section
+
 Contact form (sends data to backend API)
 
 Case Study 2: Simple Authentication System
+
 Sign Up with email & password
+
 Sign In with validation
+
 Forgot Password flow
+
 Confirmation email (simulated via console or Nodemailer)
+
 JWT-based protected routes
-
-
-📌 API Endpoints
-
-Auth
-POST /api/auth/signup – Create a new account
-POST /api/auth/login – Authenticate user
-POST /api/auth/forgot-password – Send password reset link
-GET / – Access protected content (JWT required)
-
 
 
 🖼 Screenshots
@@ -119,4 +126,5 @@ GET / – Access protected content (JWT required)
 
 
 📜 License
+
 This project is for task purpose.
